@@ -3,11 +3,13 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import 'dart:ui';
 import '/index.dart';
 import 'package:flutter/services.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 import 'verificacao_model.dart';
 export 'verificacao_model.dart';
 
@@ -489,23 +491,6 @@ class _VerificacaoWidgetState extends State<VerificacaoWidget> {
                                         .bodyMedium
                                         .fontStyle,
                                   ),
-                        ),
-                      ),
-                      Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 30.0, 0.0),
-                        child: FlutterFlowIconButton(
-                          borderRadius: 8.0,
-                          buttonSize: 40.0,
-                          fillColor: Color(0xFF664329),
-                          icon: Icon(
-                            Icons.groups_sharp,
-                            color: FlutterFlowTheme.of(context).info,
-                            size: 24.0,
-                          ),
-                          onPressed: () async {
-                            context.pushNamed(VerificacaoCopyWidget.routeName);
-                          },
                         ),
                       ),
                     ],
